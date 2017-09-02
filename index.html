@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game!</title>
+
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-8">
+				<div class="jumbotron">
+				<h1>Totally Trivial Trivia</h1>
+					<p><a class="btn btn-primary btn-lg" href="#" role="button" id="play">Play!</a></p>
+				</div>
+
+				<!--Time Remanining Clock-->
+				<div class="panel panel-default">
+					<div class="panel-heading">Time Remaining</div>
+					<div class="panel-body" id="currentTime">
+						00:30
+					</div>
+				</div>
+				
+				<!---This is where the question will get displayed-->
+				<div class="panel panel-default">
+					<div class="panel-heading">Question:</div>
+					<div class="panel-body" id="question">
+						...
+					</div>
+				</div>
+
+
+				<!---This is where 4 possible answere choices are displayed as buttons-->
+				<div class="list-group">
+				<button type="button" class="list-group-item" id="answerA" id="answer">A)....</button>
+					<button type="button" class="list-group-item" id="answerB" id="answer">B)....</button>
+					<button type="button" class="list-group-item" id="answerC" id="answer">C)....</button>
+					<button type="button" class="list-group-item" id="answerD" id="answer">D)....</button>
+				</div>
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
