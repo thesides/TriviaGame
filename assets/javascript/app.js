@@ -85,7 +85,7 @@ $(".list-group-item").on("click", function recordVote(){
 
 function validate (){
 
-	if (userGuess = computerGuess.a1){
+	if (userGuess === computerGuess.a1){
 
 		correctGuesses++
 		console.log("Right: " + correctGuesses);
@@ -146,7 +146,7 @@ var clock = {
 			clock.reset();
 			clock.loadNext();
 		}
-		else {
+		else if (computerGuess === wordAtPlay[4]) {
 			clockRunning = false;
 			clock.endGame();
 			//clock.start();
